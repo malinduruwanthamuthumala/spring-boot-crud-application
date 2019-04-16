@@ -14,6 +14,11 @@ public class DemoApplication {
 		return "hello world";
 	}
 
+	@GetMapping(value = "/hello1")
+	public String getmethodName1() {
+		return "hello world1";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
